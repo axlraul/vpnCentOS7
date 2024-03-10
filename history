@@ -1,0 +1,36 @@
+   51  wget https://raw.githubusercontent.com/Angristan/openvpn-install/master/openvpn-install.sh -O centos7-vpn.sh
+   53  chmod +x centos7-vpn.sh
+   55  sh centos7-vpn.sh
+   56  cat /root/iphone.ovpn
+   58  systemctl start openvpn-server@server.service
+
+
+
+Welcome to this OpenVPN road warrior installer!
+
+This server is behind NAT. What is the public IPv4 address or hostname?
+Public IPv4 address / hostname [8x.xxx.xxx.xxx]: rpsvpn.systes.net
+
+Which protocol should OpenVPN use?
+   1) UDP (recommended)
+   2) TCP
+Protocol [1]: 1
+
+What port should OpenVPN listen to?
+Port [1194]: 1194
+
+Select a DNS server for the clients:
+   1) Current system resolvers
+   2) Google
+   3) 1.1.1.1
+   4) OpenDNS
+   5) Quad9
+   6) AdGuard
+DNS server [1]: 3
+
+Enter a name for the first client:
+Name [client]:
+
+OpenVPN installation is ready to begin.
+Press any key to continue...
+
